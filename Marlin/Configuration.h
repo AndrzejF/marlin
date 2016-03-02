@@ -211,9 +211,13 @@ Here are some standard links for getting your machine calibrated:
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+//  #define  DEFAULT_Kp 22.2	//Wartość początkowa
+//  #define  DEFAULT_Ki 1.08	//Wartość początkowa
+//  #define  DEFAULT_Kd 114		//Wartość początkowa
+  
+#define  DEFAULT_Kp 35.41	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Ki 6.75	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Kd 46.46	//Wartość po kalibracji M303 C3 S230
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
