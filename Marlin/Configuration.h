@@ -215,9 +215,9 @@ Here are some standard links for getting your machine calibrated:
 //  #define  DEFAULT_Ki 1.08	//Wartość początkowa
 //  #define  DEFAULT_Kd 114		//Wartość początkowa
   
-#define  DEFAULT_Kp 35.41	//Wartość po kalibracji M303 C3 S230
-#define  DEFAULT_Ki 6.75	//Wartość po kalibracji M303 C3 S230
-#define  DEFAULT_Kd 46.46	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Kp 33.61	//35.41	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Ki 4.50	//6.75	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Kd 62.78	//46.46	//Wartość po kalibracji M303 C3 S230
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -261,9 +261,9 @@ Here are some standard links for getting your machine calibrated:
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 10.00
-  #define  DEFAULT_bedKi .023
-  #define  DEFAULT_bedKd 305.4
+  #define  DEFAULT_bedKp 401.89	\\10.00 \\Po autotune M303 E-1 C8 S60	29.04.2016
+  #define  DEFAULT_bedKi 61.02	\\.023 \\Po autotune M303 E-1 C8 S60	29.04.2016
+  #define  DEFAULT_bedKd 661.76	\\305.4 \\Po autotune M303 E-1 C8 S60	29.04.2016
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
