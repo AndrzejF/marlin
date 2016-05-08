@@ -381,7 +381,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false		//Było true. Zmienione dla extrudera Titan
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -401,8 +401,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -5 	//Było 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -24 	//Było -5. Zmienione dla extrudera Titan
+#define Y_MIN_POS -10	//bylo 0. Zmienione dla extrudera Titan
 #define Z_MIN_POS 0
 #define X_MAX_POS 190
 #define Y_MAX_POS 160
