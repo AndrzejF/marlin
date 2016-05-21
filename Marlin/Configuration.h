@@ -1,4 +1,4 @@
-#include <U8glib.h>
+﻿#include <U8glib.h>
 
 #ifndef CONFIGURATION_H
 #define CONFIGURATION_H
@@ -404,7 +404,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS -24 	//Było -5. Zmienione dla extrudera Titan
 #define Y_MIN_POS -10	//bylo 0. Zmienione dla extrudera Titan
 #define Z_MIN_POS 0
-#define X_MAX_POS 190
+#define X_MAX_POS 170
 #define Y_MAX_POS 160
 #define Z_MAX_POS 120
 
@@ -600,7 +600,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.4,4000,714}  // X i Y przeliczone na podstawie wydruku kontrolnego, Z pozostawione bez zmian, E na podstawie rzeczywistego przesuwania filamentu
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.4,4000,456}  // X i Y przeliczone na podstawie wydruku kontrolnego, Z pozostawione bez zmian, E - dla Extrudera Titan E3D wg producenta
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.4,4000,410}	//E zmienione na podstawie pomiaru
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,80.4,4000,410}	//E zmienione na podstawie pomiaru
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.4,160.8,4000,410}	//E zmienione na podstawie pomiaru
+
 
 #define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
