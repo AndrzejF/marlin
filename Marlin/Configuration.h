@@ -216,9 +216,9 @@ Here are some standard links for getting your machine calibrated:
 //  #define  DEFAULT_Ki 1.08	//Wartość początkowa
 //  #define  DEFAULT_Kd 114		//Wartość początkowa
   
-#define  DEFAULT_Kp 33.61	//35.41	//Wartość po kalibracji M303 C3 S230
-#define  DEFAULT_Ki 4.50	//6.75	//Wartość po kalibracji M303 C3 S230
-#define  DEFAULT_Kd 62.78	//46.46	//Wartość po kalibracji M303 C3 S230
+#define  DEFAULT_Kp 39.05	//35.41	//Wartość po kalibracji M303 C3 S230 //Po kalibracji M303 S230 C9 w dniu 6.04.2017. Wcześniej DEFAULT_Kp 33.61
+#define  DEFAULT_Ki 4.84	//6.75	//Wartość po kalibracji M303 C3 S230 //Po kalibracji M303 S230 C9 w dniu 6.04.2017. Wcześniej DEFAULT_Ki 4.50
+#define  DEFAULT_Kd 78.69	//46.46	//Wartość po kalibracji M303 C3 S230 //Po kalibracji M303 S230 C9 w dniu 6.04.2017. Wcześniej DEFAULT_Kd 62.78
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -405,9 +405,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS -24 	//Było -5. Zmienione dla extrudera Titan
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 165
+#define X_MAX_POS 172 	//Było 165
 #define Y_MAX_POS 160
-#define Z_MAX_POS 120
+#define Z_MAX_POS 145
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
